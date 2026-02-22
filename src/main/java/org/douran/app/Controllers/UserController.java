@@ -22,8 +22,6 @@ public class UserController {
     @Autowired
     private UserService userService;
     private Encryption encryptor = new Encryption();
-
-
     @PostMapping("/login")
     public ResponseEntity<String> Login(@RequestBody User user) throws NoSuchAlgorithmException {
         String username = user.getUsername();
