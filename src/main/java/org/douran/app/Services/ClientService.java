@@ -11,9 +11,10 @@ import java.util.List;
 
 @Service
 public class ClientService {
-    @Autowired
     private ClientRepository clientRepository;
-    // Get all books
+    public ClientService (ClientRepository clientRepository){
+        this.clientRepository = clientRepository;
+    }
     public List<Client> getAllClients() {
         return clientRepository.findAllClients();
     }

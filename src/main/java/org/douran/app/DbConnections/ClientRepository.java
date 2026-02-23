@@ -11,7 +11,7 @@ import java.util.List;
 
 @Repository
 public interface ClientRepository extends CrudRepository<User, Long> {
-    @Query("SELECT * FROM INFRA.AD_CLIENT ORDER BY ID")
+    @Query("SELECT * FROM INFRA.AD_CLIENT ORDER BY AD_CLIENT_ID")
     List<Client> findAllClients();
 
     @Query("SELECT * FROM INFRA.AD_CLIENT WHERE AD_CLIENT_ID = :id")
