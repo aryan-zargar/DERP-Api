@@ -31,4 +31,11 @@ public class TableService {
             throw new RuntimeException(e);
         }
     }
+    public List<Table> getTablesByOrgId(long id) {
+        try {
+            return tableRepository.findByOrgId(id);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

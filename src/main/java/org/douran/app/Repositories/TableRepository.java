@@ -21,4 +21,7 @@ public interface TableRepository extends CrudRepository<User, Long> {
 
     @Query("SELECT * FROM INFRA.AD_TABLE WHERE AD_WINDOW_ID = :id")
     List<Table> findByWindowId(@Param("id") long id);
+
+    @Query("SELECT * FROM INFRA.AD_TABLE WHERE AD_ORG_ID = :id")
+    List<Table> findByOrgId(@Param("id") long id);
 }
