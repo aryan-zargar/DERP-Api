@@ -15,9 +15,9 @@ public class WindowService {
         this.windowRepository = windowRepository;
     }
     public List<Window> getAllWindows() { return windowRepository.findAllWindows();}
-    public Window getWindowByClientId(long id) {
+    public List<Window> getWindowByClientId(long id) {
         try {
-            return windowRepository.findByClientId(id).get(0);
+            return windowRepository.findByClientId(id);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
