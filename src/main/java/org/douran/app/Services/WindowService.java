@@ -22,4 +22,11 @@ public class WindowService {
             throw new RuntimeException(e);
         }
     }
+    public List<Window> getWindowByOrgId(long id) {
+        try {
+            return windowRepository.findByOrgId(id);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

@@ -22,13 +22,20 @@ public class WindowController {
     private WindowService windowService;
 
     @GetMapping
-    public ResponseEntity<List<Window>> getWindows(@RequestParam(required = false) Long clientId) {
-        if (clientId != null) {
-            List<Window> windows = windowService.getWindowByClientId(clientId);
-            return ResponseEntity.ok(windows);
-        } else {
-            List<Window> windows = windowService.getAllWindows();
-            return ResponseEntity.ok(windows);
-        }
+    public ResponseEntity<List<Window>> getAllWindows() {
+        List<Window> windows = windowService.getAllWindows();
+        return ResponseEntity.ok(windows);
+    }
+
+    @GetMapping(params = "clientId")
+    public ResponseEntity<List<Window>> getWindowsByClientId(@RequestParam Long clientId) {
+        List<Window> windows = windowService.getWindowByClientId(clientId);
+        return ResponseEntity.ok(windows);
+    }
+
+    @GetMapping(params = "orgId")
+    public ResponseEntity<List<Window>> getWindowsByOrgId(@RequestParam Long orgId) {
+        List<Window> windows = windowService.getWindowByOrgId(orgId);
+        return ResponseEntity.ok(windows);
     }
 }

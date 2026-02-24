@@ -14,4 +14,7 @@ public interface WindowRepository extends CrudRepository<Window, Long> {
 
     @Query("SELECT * FROM INFRA.AD_WINDOW WHERE AD_CLIENT_ID = :ClientId")
     List<Window> findByClientId(@Param("ClientId") long id);
+
+    @Query("SELECT * FROM INFRA.AD_WINDOW WHERE AD_ORG_ID = :OrgId")
+    List<Window> findByOrgId(@Param("OrgId") long id);
 }
