@@ -1,7 +1,7 @@
 package org.douran.app.Services;
 
 
-import org.douran.app.DbConnections.BookRepository;
+import org.douran.app.Repositories.BookRepository;
 import org.douran.app.Models.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,10 +1,7 @@
 package org.douran.app.Services;
 
-import org.douran.app.DbConnections.ClientRepository;
-import org.douran.app.DbConnections.UserRepository;
+import org.douran.app.Repositories.ClientRepository;
 import org.douran.app.Models.Client;
-import org.douran.app.Models.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
 
 @SpringBootApplication
-@EnableJdbcRepositories(basePackages = "org.douran.app.DbConnections")
+@EnableJdbcRepositories(basePackages = "org.douran.app.Repositories")
 public class AppApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AppApplication.class, args);

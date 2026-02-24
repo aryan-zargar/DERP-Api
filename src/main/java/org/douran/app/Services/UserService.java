@@ -1,6 +1,6 @@
 package org.douran.app.Services;
 
-import org.douran.app.DbConnections.UserRepository;
+import org.douran.app.Repositories.UserRepository;
 import org.douran.app.Models.User;
 import org.springframework.stereotype.Service;
 

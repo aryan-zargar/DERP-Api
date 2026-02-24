@@ -1,7 +1,6 @@
-package org.douran.app.DbConnections;
+package org.douran.app.Repositories;
 
 
-import org.douran.app.Models.Book;
 import org.douran.app.Models.User;
 import org.springframework.data.jdbc.repository.query.Query;
 
@@ -10,7 +9,6 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {

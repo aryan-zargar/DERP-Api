@@ -1,4 +1,4 @@
-package org.douran.app.DbConnections;
+package org.douran.app.Repositories;
 
 import org.douran.app.Models.Book;
 import org.springframework.data.jdbc.repository.query.Query;

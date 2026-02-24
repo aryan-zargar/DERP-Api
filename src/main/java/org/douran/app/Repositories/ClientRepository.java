@@ -1,4 +1,4 @@
-package org.douran.app.DbConnections;
+package org.douran.app.Repositories;
 
 import org.douran.app.Models.Client;
 import org.douran.app.Models.User;
