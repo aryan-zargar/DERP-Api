@@ -45,6 +45,6 @@ public class TabController {
     @GetMapping(params = "orgId")
     public ResponseEntity<List<Tab>> getTabsByOrgId(@RequestParam Long orgId) {
         List<Tab> tabs = tabService.getByOrgId(orgId);
-        return Responset aEntity.ok(tabs);
+        return ResponseEntity.ok(tabs);
     }
 }

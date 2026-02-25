@@ -11,13 +11,13 @@ public class Window {
     private long Id;
 
     @Column("AD_CLIENT_ID")
-    private String ClientId;
+    private long ClientId;
 
     @Column("AD_ORG_ID")
-    private String OrgId;
+    private long OrgId;
 
     @Column("ISACTIVE")
-    private String IsActive;
+    private char IsActive;
 
     @Column("NAME")
     private String Name;
@@ -29,58 +29,102 @@ public class Window {
     private String Description;
 
     @Column("WINDOWTYPE")
-    private String WindowType;
+    private char WindowType;
 
     @Column("ISSOTRX")
-    private String Issotrx;
+    private char Issotrx;
 
     @Column("ENTITYTYPE")
-    private String EntityType;
+    private int EntityType;
 
     @Column("WINWIDTH")
-    private String WindowsWidth;
+    private int WindowsWidth;
 
-    public long getId() {return Id;}
+    public long getId() {
+        return Id;
+    }
 
-    public void setId(long id) {Id = id;}
+    public void setId(long id) {
+        Id = id;
+    }
 
-    public String getClientId() {return ClientId;}
+    public long getClientId() {
+        return ClientId;
+    }
 
-    public void setClientId(String clientId) {ClientId = clientId;}
+    public void setClientId(long clientId) {
+        ClientId = clientId;
+    }
 
-    public String getOrgId() {return OrgId;}
+    public long getOrgId() {
+        return OrgId;
+    }
 
-    public void setOrgId(String orgId) {OrgId = orgId;}
+    public void setOrgId(long orgId) {
+        OrgId = orgId;
+    }
 
-    public String getIsActive() {return IsActive;}
+    public char getIsActive() {
+        return IsActive;
+    }
 
-    public void setIsActive(String isActive) {IsActive = isActive;}
+    public void setIsActive(char isActive) {
+        IsActive = isActive;
+    }
 
-    public String getName() {return Name;}
+    public String getName() {
+        return Name;
+    }
 
-    public void setName(String name) {Name = name;}
+    public void setName(String name) {
+        Name = name;
+    }
 
-    public String getHelp() {return Help;}
+    public String getHelp() {
+        return Help;
+    }
 
-    public void setHelp(String help) {Help = help;}
+    public void setHelp(String help) {
+        Help = help;
+    }
 
-    public String getDescription() {return Description;}
+    public String getDescription() {
+        return Description;
+    }
 
-    public void setDescription(String description) {Description = description;}
+    public void setDescription(String description) {
+        Description = description;
+    }
 
-    public String getWindowType() {return WindowType;}
+    public char getWindowType() {
+        return WindowType;
+    }
 
-    public void setWindowType(String windowType) {WindowType = windowType;}
+    public void setWindowType(char windowType) {
+        WindowType = windowType;
+    }
 
-    public String getIssotrx() {return Issotrx;}
+    public char getIssotrx() {
+        return Issotrx;
+    }
 
-    public void setIssotrx(String issotrx) {Issotrx = issotrx;}
+    public void setIssotrx(char issotrx) {
+        Issotrx = issotrx;
+    }
 
-    public String getEntityType() {return EntityType;}
+    public int getEntityType() {
+        return EntityType;
+    }
 
-    public void setEntityType(String entityType) {EntityType = entityType;}
+    public void setEntityType(int entityType) {
+        EntityType = entityType;
+    }
 
-    public String getWindowsWidth() {return WindowsWidth;}
+    public int getWindowsWidth() {
+        return WindowsWidth;
+    }
 
-    public void setWindowsWidth(String windowsWidth) {WindowsWidth = windowsWidth;}
+    public void setWindowsWidth(int windowsWidth) {
+        WindowsWidth = windowsWidth;
+    }
 }

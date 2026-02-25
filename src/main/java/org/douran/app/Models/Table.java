@@ -10,13 +10,13 @@ public class Table {
     private long Id;
 
     @Column("AD_CLIENT_ID")
-    private String ClientID;
+    private long ClientID;
 
     @Column("AD_ORG_ID")
-    private String OrgID;
+    private long OrgID;
 
     @Column("ISACTIVE")
-    private String IsActive;
+    private char IsActive;
 
     @Column("NAME")
     private String Name;
@@ -31,7 +31,7 @@ public class Table {
     private String IsView;
 
     @Column("ACCESSLEVEL")
-    private String AccessLevel;
+    private int AccessLevel;
 
     @Column("ENTITYTYPE")
     private String EntityType;
@@ -47,27 +47,27 @@ public class Table {
         Id = id;
     }
 
-    public String getClientID() {
+    public long getClientID() {
         return ClientID;
     }
 
-    public void setClientID(String clientID) {
+    public void setClientID(long clientID) {
         ClientID = clientID;
     }
 
-    public String getOrgID() {
+    public long getOrgID() {
         return OrgID;
     }
 
-    public void setOrgID(String orgID) {
+    public void setOrgID(long orgID) {
         OrgID = orgID;
     }
 
-    public String getIsActive() {
+    public char getIsActive() {
         return IsActive;
     }
 
-    public void setIsActive(String isActive) {
+    public void setIsActive(char isActive) {
         IsActive = isActive;
     }
 
@@ -103,11 +103,11 @@ public class Table {
         IsView = isView;
     }
 
-    public String getAccessLevel() {
+    public int getAccessLevel() {
         return AccessLevel;
     }
 
-    public void setAccessLevel(String accessLevel) {
+    public void setAccessLevel(int accessLevel) {
         AccessLevel = accessLevel;
     }
 
